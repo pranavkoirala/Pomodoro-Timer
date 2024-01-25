@@ -16,11 +16,12 @@ function getInput() {
     startButton.disabled = true;
     inputBox.style.opacity = '0';
     startButton.style.opacity = '0';
-    displayText.innerHTML = inputText;
+    displayText.innerText = inputText; 
     timer.style.opacity = '100%';
     displayText.style.opacity = '100%';
     startWorkTimer();
 }
+
 
 function startWorkTimer() {
     let startTime = Date.now();
